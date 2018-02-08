@@ -1,0 +1,18 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  // all direct children
+  > * {
+    margin-bottom: $m-size;
+  }
+
+}
+
+.form__error {
+  background:$light-red;
+  color: $dark-red;
+  padding: $s-size;
+  margin: 0 0 $m-size 0;
+  // font-style: italic;
+}
