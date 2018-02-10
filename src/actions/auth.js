@@ -1,10 +1,12 @@
 import { firebase, googleAuthProvider } from '../firebase/firebase';
 
+// is called from app.js: firebase.auth().onAuthStateChanged()
 export const login = (uid) => ({
   type: 'LOGIN',
   uid
 });
 
+// is called from app.js: firebase.auth().onAuthStateChanged()
 export const logout = () => ({
   type: 'LOGOUT'
 });
